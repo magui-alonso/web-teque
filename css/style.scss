@@ -1,0 +1,686 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Texturina:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* grid*/
+
+.grid {
+    display: grid;
+    grid-template-areas: "section" "main""footer";
+    grid-template-rows: auto 350px auto;
+    grid-template-columns: auto;
+    height: 100vh;
+}
+
+section {
+    grid-area: section;
+    
+}
+main {
+    grid-area: main;
+   
+}
+
+footer {
+    grid-area: footer;
+    background-color: #5e5e5e;
+}
+
+/* ---*/
+
+body {
+    background-color: #f2f2f2;
+}
+
+a:link {
+    text-decoration:none;
+}
+
+/* Nav Bar*/
+
+
+.navbar {
+    background-color: #5271FF !important;
+   
+}
+
+.imagen-logo-nav {
+    width: 80px;
+    height: 50px;
+    
+}
+
+.nav-link {
+    font-family: 'Roboto', sans-serif ;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #ffffff !important;
+    letter-spacing: 1px;
+    font-size: 20px;
+    margin-left: 20px;
+    padding: 5px;
+}
+
+
+.nav-link:hover {
+    background-color: #b9a788;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.header {
+    background: url("../multimedia/img/teque-portada-2.png") no-repeat center;
+    background-size: cover;
+    min-height: 100vh;
+    
+}
+
+.texto-header {
+    position: absolute;
+    width: 680px;
+    margin-left: 78px;
+    margin-top: 250px;
+   
+}
+
+.h2-header {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: #ffffff;
+    font-size: 40px;
+    height: 53px;
+    margin: 0;
+    
+}
+
+.h1-header {
+    font-family: 'Texturina', serif;
+    font-size: 70px;
+    color: #ffffff;
+    height: 109px;
+
+}
+
+.button-header {
+    width: 567px;
+    height: 65px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #5271FF;
+    color: #ffffff;
+    font-size: 30px;
+    border: solid #5271FF 2px;
+    border-radius: 6px;
+
+}
+
+/* Section*/
+
+.section-index {
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 50px;
+}
+
+/* Nosotros*/
+
+.card-nosotros {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004D;
+    border: 1px solid #5271FF;
+    border-radius: 6px;
+    opacity: 1;
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.nosotros__img--teq {
+    width: 541px;
+    height: 385px;
+    border-radius: 6px;
+}
+
+.nosotros-texto {
+    width: 50%;
+    padding: 20px;
+}
+
+.h2-nosotros {
+    color: #707070;
+    font-weight: 400;
+    padding-bottom: 20px;
+    text-align: left;
+    border-bottom: #5271FF solid 2px;
+    width: 120px;
+}
+
+.nosotros-p {
+    text-align: left;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+}
+
+
+/* Tequeños*/
+.card-tequeños {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0000004D;
+    border: 1px solid #5271FF;
+    border-radius: 6px;
+    opacity: 1;
+    margin: 70px 70px 50px 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.tequeños-info {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 90%;
+
+}
+
+.h2-tequeños {
+    color: #707070;
+    margin-top: 44px;
+    margin-bottom: 40px;
+    text-align: center;
+    font-weight: 400;
+
+}
+
+.tequeños__img--teq {
+    width: 100%;
+    border-radius: 6px;
+
+}
+
+.tequeños-p {
+    text-align: left;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+}
+
+.tequeños-info-producto {
+    background-color: #ffffff;
+    box-shadow: 0px 3px 6px #0000004D;
+    border-radius: 6px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.h3-tequeños {
+    padding: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    color: #707070;
+    font-weight: 350;
+}
+
+.h3-span-tequeños {
+    font-family: 'Texturina', serif;
+    font-weight: bold;
+}
+
+.tequeños-info-p {
+    padding: 20px;
+    text-align: left;
+    font-family: 'Roboto', sans-serif;
+    color: #707070;
+    font-size: 18px;
+}
+
+.botones-tequeños {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.botones-teq {
+    background-color: #5271FF;
+    border: solid #5271FF 1px;
+    border-radius: 6px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+    width: 400px;
+    height: 50px;
+    color: #ffffff;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+/*main-recomendaciones*/
+ 
+.width-auto {
+    width: auto;
+}
+
+.text-lg {
+    font-size: 2rem;
+}
+
+.carousel-indicators li {
+    border: none;
+    background: #ccc;
+}
+
+.carousel-indicators li.active {
+    background: #5271FF;
+}
+
+/*footer*/
+
+.footer-redes {
+    background-color: #5271FF;
+    height: 330px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+.fab {
+    color: #ffffff;
+    font-size: 85px;
+}
+.far {
+    color: #ffffff;
+    font-size: 85px;
+}
+.redes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.texto-redes {
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+    margin-top:10px;
+    
+}
+.footer-info {
+    background-color: #5e5e5e;
+    height: 320px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
+    margin-top: 45px;
+}
+
+.footer__info--nombre{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.nombre__footer--info {
+    font-family: 'Texturina', serif;
+    color: #ffffff;
+    font-size: 36px;
+   
+}
+.footer__info--menu{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+
+.footer__info--menu1{
+ 
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 10px;
+
+}
+
+
+.info__menu--enlace {
+    font-family: 'Roboto', sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 300;
+    margin-bottom: 40px;
+
+   &:hover {
+       color: #ffffff;
+   }
+}
+
+
+.footer__info--logo{
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.info-logo {
+    width: 242px;
+    height: 242px;
+}
+.footer-nombre {
+    background-color: #5e5e5e;
+    border-top: #E7BC55 solid 3px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+   
+}
+.nombre {
+    font-family: 'Texturina', serif;
+    color: #ffffff;
+    font-size: 40px;
+
+}
+
+
+/* MEDIA QUERY*/
+@media (min-width: 300px) and (max-width: 768px) {
+   
+
+    
+    .header {
+        background: url("../multimedia/img/img-teque-8.jpeg") no-repeat center;
+        background-size: cover;
+        min-height: 50vh;
+        
+    }
+
+    .texto-header {
+        width: 300px;
+        margin-left: 20px;
+        margin-top: 180px;
+       
+    }
+    
+    .h2-header {
+        font-size: 25px;
+        height: 35px;
+    }
+    
+    .h1-header {
+        font-size: 30px;
+        height: 55px;
+    }
+    
+    .button-header {
+        width: 290px;
+        height: 50px;
+        font-size: 20px;
+    
+    
+    }
+    .section-index {
+        margin: 0;
+    }
+
+
+    /*nosotros*/
+    .card-nosotros {
+        
+       margin: 0;
+        width: 80%;
+        
+    }
+    
+    .nosotros__img--teq {
+        width: 100%;
+        border-radius: 6px;
+    }
+    
+    .nosotros-texto {
+        width: 100%;
+        padding: 20px;
+    }
+    
+    /*tequeños*/
+    
+    .card-tequeños {
+        margin: 0;
+        width: 80%;
+        
+        
+    }
+    
+    .tequeños-info {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        width: 90%;
+    
+    }
+    
+    .h2-tequeños {
+        color: #707070;
+        margin-top: 44px;
+        margin-bottom: 40px;
+        text-align: center;
+        font-weight: 400;
+    
+    }
+    
+    .tequeños__img--teq {
+        width: 100%;
+        border-radius: 6px;
+    
+    }
+    
+    .tequeños-p {
+        text-align: left;
+        margin-bottom: 40px;
+        font-size: 18px;
+        font-family: 'Roboto', sans-serif;
+        color: #707070;
+    }
+    
+    .tequeños-info-producto {
+        background-color: #ffffff;
+        box-shadow: 0px 3px 6px #0000004D;
+        border-radius: 6px;
+        margin-bottom: 30px;
+        width: 100%;
+    }
+    
+    .h3-tequeños {
+        padding: 20px;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        font-size: 20px;
+        color: #707070;
+        font-weight: 350;
+    }
+    
+    .h3-span-tequeños {
+        font-family: 'Texturina', serif;
+        font-weight: bold;
+    }
+    
+    .tequeños-info-p {
+        padding: 20px;
+        text-align: left;
+        font-family: 'Roboto', sans-serif;
+        color: #707070;
+        font-size: 18px;
+    }
+    
+    .botones-tequeños {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .botones-teq {
+        background-color: #5271FF;
+        border: solid #5271FF 1px;
+        border-radius: 6px;
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-bottom: 30px;
+        width: 400px;
+        height: 50px;
+        color: #ffffff;
+        font-size: 25px;
+        font-family: 'Roboto', sans-serif;
+    
+    }
+
+    /*recomendaciones*/
+
+    .blockquote {
+        display: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+    }
+    .rounded-circle {
+        width: 75px;
+    }
+    #texto-recom {
+        margin: 20px;
+    }
+
+    /*footer*/
+    .footer-redes {
+        height: 200px;
+        justify-content:space-evenly;
+        
+    }
+    .fab {
+        
+        font-size: 50px;
+    }
+    .far {
+        
+        font-size: 50px;
+    }
+  
+    .texto-redes {
+        display: none;
+        
+        
+    }
+    .footer-info {
+        background-color: #5e5e5e;
+        height: fit-content;
+        width: 50%;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content:space-evenly;
+        margin-top: 45px;
+    }
+    
+    .footer__info--nombre{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+    }
+    .nombre__footer--info {
+        font-family: 'Texturina', serif;
+        color: #ffffff;
+        font-size: 36px;
+       
+    }
+    .footer__info--menu{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+       
+    }
+    
+    
+    .footer__info--menu1{
+     
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 30px;
+    
+    }
+    
+    
+    .info__menu--enlace {
+        font-family: 'Roboto', sans-serif;
+        color: #ffffff;
+        font-size: 25px;
+        font-weight: 300;
+        margin-bottom: 40px;
+    
+       &:hover {
+           color: #ffffff;
+       }
+    }
+    
+    
+    .footer__info--logo{
+        width: 50%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    
+    }
+    .info-logo {
+        width: 200px;
+        height: 200px;
+        margin-bottom: 20px;
+    }
+    .footer-nombre {
+        background-color: #5e5e5e;
+        border-top: #E7BC55 solid 3px;
+        height: 100px;
+        display: flex;
+        flex-direction: row;
+        justify-content:space-around;
+        align-items: center;
+       
+    }
+    .nombre {
+        font-family: 'Texturina', serif;
+        color: #ffffff;
+        font-size: 30px;
+    
+    }
+}
+
+
+
+
+
