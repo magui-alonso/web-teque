@@ -43,28 +43,31 @@
 
 <body>
   <!--header index-->
-
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="index.html"><img class="imagen-logo-nav" src="multimedia/img/logo-peque-1.png"
-        alt=""></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-link active" href="#nosotros">Nosotros<span class="sr-only">(current)</span></a>
-        <a class="nav-link" href="#tequeños">Tequeños</a>
-        <a class="nav-link" href="#recomendaciones">Recomendaciones</a>
-        <a class="nav-link" href="#contacto">Contacto</a>
-      </div>
-    </div>
-  </nav>
   <header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+      <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars" style="color:#ffffff; font-size:28px"></i>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="index.html"><img class="imagen-logo-nav rounded-circle" src="#"
+              alt="Logo tequeños"></a>
+          <a id="link-nav" class="nav-link active" href="#nosotros">Nosotros</a>
+          <a id="link-nav" class="nav-link" href="#tequeños">Tequeños</a>
+          <a id="link-nav" class="nav-link" href="#recomendaciones">Recomendaciones</a>
+          <a id="link-nav" class="nav-link" href="#contacto">Contacto</a>
+        </div>
+      </div>
+    </nav>
+
+
     <div class="texto-header">
       <h2 class="h2-header">Bienvenidos a</h2>
       <h1 class="h1-header">Tequeños Argentinos</h1>
-      <button class="button-header">¿Te animas a probarlos?</button>
+      <a href="#tequeños"><button class="button-header">¿Te animas a probarlos?</button></a>
+
     </div>
   </header>
 
@@ -74,25 +77,17 @@
 
   <div class="grid">
 
-    <section class="section-index">
+    <section class="section">
 
-      <!--section nosotros-->
-      <a name="nosotros"></a>
-      <div class="card-nosotros" >
-        <img class="nosotros__img--teq" src="multimedia/img/img-teque(11).jpeg" alt="">
-        <div class="nosotros-texto">
+      <div class="card-nosotros">
+
+
+        <div class="nosotros-texto"><a name="nosotros"></a>
           <h2 class="h2-nosotros">NOSOTROS</h2>
-          <p class="nosotros-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis quam
-            animi beatae, aspernatur
-            rerum adipisci, amet, enim corporis ullam deleniti repellat necessitatibus dolore culpa asperiores dolores
-            iste tenetur id?</p>
-          <p class="nosotros-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis quam
-            animi beatae, aspernatur
-            rerum adipisci, amet, enim corporis ullam deleniti repellat necessitatibus dolore culpa asperiores dolores
-            iste tenetur id?</p>
-
+          <p class="nosotros-p">Somos un microemprendiento de tequeños congelados con venta a comercios.</p>
         </div>
 
+        <img class="nosotros__img--teq" src="multimedia/img/logo.png" alt="logo">
       </div>
 
       <!--section tequeños-->
@@ -109,7 +104,7 @@
           <img class="tequeños__img--teq" src="multimedia/img/img-teque(18).jpeg" alt="">
 
           <div class="tequeños-info-producto">
-            <h3 class="h3-tequeños">Nuestros<span class="h3-span-tequeños">Tequeños Argentinos</span></h3>
+            <h3 class="h3-tequeños"><span class="h3-span-tequeños">Nuestros</span> Tequeños Argentinos</h3>
 
             <p class="tequeños-info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis quam
               animi beatae, aspernatur
@@ -118,100 +113,80 @@
 
             <div class="botones-tequeños">
               <button class="botones-teq">¡Quiero comerlos!</button>
-              <button class="botones-teq">¡Quiero venderlos!</button>
+              <button class="botones-teq-vender">¡Quiero venderlos!</button>
             </div>
           </div>
         </div>
       </div>
-    </section> 
+
+    </section>
 
     <!--main-recomendaciones-->
-    
-    <main class="pb-5">
-     <a name="recomendaciones"></a> <!--enlace a section-->
-      
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10 col-xl-8 mx-auto">
-            <div class="p-5 bg-white shadow rounded">
-              <!-- Bootstrap carousel-->
-              <div class="carousel slide" id="carouselExampleIndicators" data-ride="carousel">
-               
-                
-                <!-- Bootstrap inner [slides]-->
-                <div class="carousel-inner px-5 pb-4">
-                  <!-- Carousel slide-->
-                  <div class="carousel-item active">
-                    <div class="media"><img class="rounded-circle img-thumbnail"
-                        src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-1_ffutqr.jpg" alt=""
-                        width="150">
-                      <div class="media-body ml-3">
-                        <blockquote class="blockquote border-0 p-0">
-                          <h5>Juan Perez</h5>
-                          <p class="font-italic lead"> Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.</p>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
 
-                  <!-- Carousel slide-->
-                  <div class="carousel-item">
-                    <div class="media"><img class="rounded-circle img-thumbnail"
-                        src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-3_hdxocq.jpg" alt=""
-                        width="150">
-                      <div class="media-body ml-3">
-                        <blockquote class="blockquote border-0 p-0">
-                          <h5>Susana Gimenez</h5>
-                          <p id="texto-recom" class="font-italic lead"> Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.</p>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Carousel slide-->
-                  <div class="carousel-item">
-                    <div class="media"><img class="rounded-circle img-thumbnail"
-                        src="https://res.cloudinary.com/mhmd/image/upload/v1579676165/avatar-2_gibm2s.jpg" alt=""
-                        width="150">
-                      <div class="media-body ml-3">
-                        <blockquote class="blockquote border-0 p-0">
-                          <h5>Roberto Sanchez</h5>
-                          <p class="font-italic lead"> Lorem ipsum
-                            dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua.</p>
-                        </blockquote>
-                      </div>
-                    </div>
-                  </div>
+    <div class="container">
+      <div id="carouselContent" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+          <div class="carousel-item active text-center p-4">
+  
+            <div class="recomendacion">
+              <div class="card">
+                <img class="img-recom rounded-circle" src="multimedia/img/1.jpg" alt="img-clientes">
+                <div class="texto-recom">
+                  <h4 class="h4-recom">Federico Castro</h4>
+                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta distinctio
+                    voluptatibus possimus. At quia quam eos eligendi ipsum"</p>
                 </div>
-
-
-                <!-- Bootstrap controls [dots]-->
-                <a class="carousel-control-prev width-auto" href="#carouselExampleIndicators" role="button"
-                  data-slide="prev">
-                  <i class="fa fa-angle-left text-dark text-lg"></i>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next width-auto" href="#carouselExampleIndicators" role="button"
-                  data-slide="next">
-                  <i class="fa fa-angle-right text-dark text-lg"></i>
-                  <span class="sr-only">Next</span>
-                </a>
               </div>
             </div>
+  
+          </div>
+          <div class="carousel-item text-center p-4">
+  
+            <div class="recomendacion">
+              <div class="card">
+                <img class="img-recom rounded-circle" src="multimedia/img/2.jpg" alt="img-clientes">
+                <div class="texto-recom">
+                  <h4 class="h4-recom">Sandra Willman</h4>
+                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta distinctio
+                    voluptatibus possimus. At quia quam eos eligendi ipsum"</p>
+                </div>
+              </div>
+            </div>
+  
+          </div>
+  
+          <div class="carousel-item text-center p-4">
+  
+            <div class="recomendacion">
+              <div class="card">
+                <img class="img-recom rounded-circle" src="multimedia/img/3.jpg" alt="img-clientes">
+                <div class="texto-recom">
+                  <h4 class="h4-recom">Teresa Godoy</h4>
+                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta distinctio
+                    voluptatibus possimus. At quia quam eos eligendi ipsum"</p>
+                </div>
+              </div>
+            </div>
+  
           </div>
         </div>
+        <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
+          <i class="fas fa-arrow-circle-left"></i>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselContent" role="button" data-slide="next">
+          <i class="fas fa-arrow-circle-right"></i>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </main> 
+    </div>
 
     <!--footer-->
-    
+
+
     <footer>
       <a name="contacto"></a>
+
       <div class="footer-redes">
         <div class="redes">
           <a href="https://www.instagram.com/caromontalto/"><i class="fab fa-whatsapp"></i></a>
@@ -227,31 +202,37 @@
         </div>
       </div>
 
-      <div class="footer-info">
+      <div class="footer__info">
 
         <div class="footer__info--nombre">
           <h5 class="nombre__footer--info">Tequeños Argentinos</h5>
+          <div class="linea-footer"></div>
         </div>
 
-        <div class="footer__info--menu">
-          <div class="footer__info--menu1">
-            <a class="info__menu--enlace" href="#nosotros">Nosotros</a>
-            <a class="info__menu--enlace" href="#tequeños">Tequeños</a>
-            <a class="info__menu--enlace" href="#recomendaciones">Recomendaciones</a>
-            <a class="info__menu--enlace" href="#contacto">Contacto</a>
-          </div>
+
+
+        <div class="footer__info--menu1">
+          <a class="info__menu--enlace" href="#nosotros">Nosotros</a>
+          <a class="info__menu--enlace" href="#tequeños">Tequeños</a>
+          <a class="info__menu--enlace" href="#recomendaciones">Recomendaciones</a>
+          <a class="info__menu--enlace" href="#contacto">Contacto</a>
         </div>
+
+
 
         <div class="footer__info--logo">
           <img class="info-logo" src="multimedia/img/logo-teq.png" alt="">
         </div>
 
       </div>
+
       <div class="footer-nombre">
         <h2 class="nombre">Tequeños Argentinos</h2>
       </div>
 
+
     </footer>
+
   </div>
 
 
