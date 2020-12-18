@@ -44,8 +44,12 @@ a:link {
 /* Nav Bar*/
 /*-------------------------------Navegador----------------------------- */
 .imagen-logo-nav {
-  margin-right: 500px;
-  height: 80px;
+  margin-right: 450px;
+  height: 70px;
+}
+
+.nav-link {
+  margin: 0;
 }
 
 .navbar {
@@ -54,6 +58,7 @@ a:link {
   position: fixed;
   z-index: 1;
   width: 100%;
+  height: 12%;
 }
 
 .navbar-toggler {
@@ -118,12 +123,12 @@ a:link {
 }
 
 .button-header {
-  width: 567px;
-  height: 65px;
+  width: 400px;
+  height: 50px;
   font-family: 'Roboto', sans-serif;
   background-color: #5271FF;
   color: #ffffff;
-  font-size: 30px;
+  font-size: 25px;
   border: solid #5271FF 2px;
   border-radius: 6px;
 }
@@ -540,7 +545,7 @@ footer {
 .footer-redes {
   background-color: #5271FF;
   width: 100%;
-  height: 230px;
+  height: 150px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -564,12 +569,12 @@ footer {
 
 .fab {
   color: #ffffff;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 .far {
   color: #ffffff;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 .redes {
@@ -610,7 +615,7 @@ footer {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 300px;
+  height: 250px;
 }
 
 .footer__info--nombre {
@@ -632,27 +637,13 @@ footer {
   padding-top: 30px;
   font-family: 'Texturina', serif;
   color: #ffffff;
-  font-size: 36px;
+  font-size: 25px;
 }
 
 .linea-footer {
   border: solid 1px grey;
-  width: 40%;
-  margin-top: 20px;
-}
-
-.footer__info--menu {
   width: 30%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  margin-top: 20px;
 }
 
 .footer__info--menu1 {
@@ -677,12 +668,25 @@ footer {
   padding-bottom: 40px;
 }
 
+.info__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 .info__menu--enlace {
   font-family: 'Roboto', sans-serif;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 20px;
   font-weight: 300;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .info__menu--enlace:hover {
@@ -704,14 +708,14 @@ footer {
 }
 
 .info-logo {
-  width: 242px;
-  height: 242px;
+  width: 200px;
+  height: 200px;
 }
 
 .footer-nombre {
   background-color: #4e4e4e;
   border-top: #E7BC55 solid 3px;
-  height: 100px;
+  height: 70px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -730,7 +734,7 @@ footer {
 .nombre {
   font-family: 'Texturina', serif;
   color: #ffffff;
-  font-size: 40px;
+  font-size: 30px;
 }
 
 /* MEDIA QUERY*/
@@ -738,6 +742,22 @@ footer {
   .imagen-logo-nav {
     margin-right: 0;
     height: 80px;
+  }
+  .navbar {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: transparent;
+    position: absolute;
+  }
+  .navbar:visited {
+    background-color: #5271FF;
+  }
+  .navbar:hover {
+    background-color: #5271FF;
+  }
+  .navbar:active {
+    background-color: #5271FF;
   }
   .header {
     background: url("../multimedia/img/img-teque-8.jpeg") no-repeat center;
@@ -827,25 +847,16 @@ footer {
   }
   /*footer*/
   .footer-redes {
-    width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    padding-top: 20px;
-  }
-  .redes {
-    width: 100%;
-    padding-bottom: 30px;
+    height: 100px;
   }
   .fab {
-    font-size: 60px;
+    font-size: 50px;
   }
   .far {
-    font-size: 60px;
+    font-size: 50px;
+  }
+  .texto-redes {
+    display: none;
   }
   .footer__info {
     display: -webkit-box;
