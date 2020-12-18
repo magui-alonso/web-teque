@@ -24,7 +24,7 @@
 
   <script src="https://kit.fontawesome.com/7a5f78019b.js" crossorigin="anonymous"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 
   <title>Tequeños Argentinos</title>
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -52,7 +52,7 @@
 
       <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-link" href="index.html"><img class="imagen-logo-nav rounded-circle" src="#"
+          <a class="nav-link" href="index.html"><img class="imagen-logo-nav" src="multimedia/img/logo-peque.png"
               alt="Logo tequeños"></a>
           <a id="link-nav" class="nav-link active" href="#nosotros">Nosotros</a>
           <a id="link-nav" class="nav-link" href="#tequeños">Tequeños</a>
@@ -75,6 +75,9 @@
 
   <!--section-->
 
+
+
+
   <div class="grid">
 
     <section class="section">
@@ -96,24 +99,141 @@
         <h2 class="h2-tequeños">TEQUEÑOS</h2>
         <div class="tequeños-info">
 
-          <p class="tequeños-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis quam
-            animi beatae, aspernatur
-            rerum adipisci, amet, enim corporis ullam deleniti repellat necessitatibus dolore culpa asperiores dolores
-            iste tenetur id?</p>
+          <p class="tequeños-p"> Nuestros tequeños se caracterizan por tener un queso argentino y una masa agridulce. Su
+            cocción puede ser al horno, pero fritos son crocantes y mas deliciosos! Esta masa en particular no chupa
+            aceite por ende quedan sequitos y muy ricos.</p>
+          <p class="tequeños-p">¡Y duplican el tamaño de un tequeño Venezonalo!</p>
+
 
           <img class="tequeños__img--teq" src="multimedia/img/img-teque(18).jpeg" alt="">
 
           <div class="tequeños-info-producto">
             <h3 class="h3-tequeños"><span class="h3-span-tequeños">Nuestros</span> Tequeños Argentinos</h3>
 
-            <p class="tequeños-info-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fugit perferendis quam
-              animi beatae, aspernatur
-              rerum adipisci, amet, enim corporis ullam deleniti repellat necessitatibus dolore culpa asperiores dolores
-              iste tenetur id?</p>
+            <p class="tequeños-info-p">Concisten en una barra de queso de 12 cm envuelto en una masa agridulce que
+              termina siendo un manjar.</p>
 
             <div class="botones-tequeños">
-              <button class="botones-teq">¡Quiero comerlos!</button>
-              <button class="botones-teq-vender">¡Quiero venderlos!</button>
+              <button class="botones-teq" data-toggle="modal" data-target="#myModal-1">¡Quiero comerlos!</button>
+              <!-- The Modal -->
+              <div class="modal" id="myModal-1">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h5 class="modal-title">¡Quiero comerlos!</h5>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <form action="envia.php" method="post" class="containerForm">
+
+                        <ul class="form">
+
+                          <li>
+                            <label class="label-form" for="nombre y apellido">Nombre y Apellido:</label>
+                          </li>
+                          <li>
+                            <input type="text" name="nombre" required>
+                          </li>
+                          <li>
+                            <label class="label-form" for="email">Email:</label>
+                          </li>
+                          <li>
+                            <input type="email" name="email" required>
+                          </li>
+                          <li>
+                            <label class="label-form" for="phone">Teléfono:</label>
+                          </li>
+                          <li>
+                            <input type="phone" name="phone" required>
+                          </li>
+                          <li>
+                            <label class="label-form" for="message">Deja tu mensaje:</label>
+                          </li>
+                          <li>
+                            <textarea name="message" rows="4"></textarea>
+                          </li>
+                          <li>
+                            <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
+                          </li>
+                        </ul>
+                      </form>
+
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" id="boton-close-modal" class="btn btn-danger"
+                        data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <button class="botones-teq-vender" data-toggle="modal" data-target="#myModal-2">¡Quiero
+                venderlos!</button>
+              <!-- The Modal -->
+              <div class="modal" id="myModal-2">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h5 class="modal-title">¡Quiero
+                        venderlos!</h5>
+                    </div>
+
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <form action="envia.php" method="post" class="containerForm">
+
+                        <ul class="form">
+
+                          <li>
+                            <label class="label-form" for="nombre y apellido">Nombre y Apellido:</label>
+                          </li>
+                          <li>
+                            <input type="text" name="nombre" required>
+                          </li>
+                          <li>
+                            <label class="label-form" for="email">Email:</label>
+                          </li>
+                          <li>
+                            <input type="email" name="email" required>
+                          </li>
+                          <li>
+                            <label class="label-form" for="phone">Teléfono:</label>
+                          </li>
+                          <li>
+                            <input type="phone" name="phone" required>
+                          </li>
+                          <li>
+                            <label class="label-form" for="message">Deja tu mensaje:</label>
+                          </li>
+                          <li>
+                            <textarea name="message" rows="4"></textarea>
+                          </li>
+                          <li>
+                            <input class="label-form" id="botonEnviar" type="submit" value="Enviar">
+                          </li>
+                        </ul>
+                      </form>
+
+
+                    </div>
+
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" id="boton-close-modal" class="btn btn-danger"
+                        data-dismiss="modal">Cerrar</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -127,47 +247,51 @@
       <div id="carouselContent" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active text-center p-4">
-  
+
             <div class="recomendacion">
+              <a name="recomendaciones"></a>
               <div class="card">
                 <img class="img-recom rounded-circle" src="multimedia/img/1.jpg" alt="img-clientes">
                 <div class="texto-recom">
                   <h4 class="h4-recom">Federico Castro</h4>
-                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta distinctio
+                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta
+                    distinctio
                     voluptatibus possimus. At quia quam eos eligendi ipsum"</p>
                 </div>
               </div>
             </div>
-  
+
           </div>
           <div class="carousel-item text-center p-4">
-  
+
             <div class="recomendacion">
               <div class="card">
                 <img class="img-recom rounded-circle" src="multimedia/img/2.jpg" alt="img-clientes">
                 <div class="texto-recom">
                   <h4 class="h4-recom">Sandra Willman</h4>
-                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta distinctio
+                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta
+                    distinctio
                     voluptatibus possimus. At quia quam eos eligendi ipsum"</p>
                 </div>
               </div>
             </div>
-  
+
           </div>
-  
+
           <div class="carousel-item text-center p-4">
-  
+
             <div class="recomendacion">
               <div class="card">
                 <img class="img-recom rounded-circle" src="multimedia/img/3.jpg" alt="img-clientes">
                 <div class="texto-recom">
                   <h4 class="h4-recom">Teresa Godoy</h4>
-                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta distinctio
+                  <p class="p-recom">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, ratione? Soluta
+                    distinctio
                     voluptatibus possimus. At quia quam eos eligendi i"</p>
                 </div>
               </div>
             </div>
-  
+
           </div>
         </div>
         <a class="carousel-control-prev" href="#carouselContent" role="button" data-slide="prev">
